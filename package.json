@@ -1,0 +1,9 @@
+{
+  "name": "my-sheets-proxy",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "googleapis": "^132.0.0"
+  }
+}
+
