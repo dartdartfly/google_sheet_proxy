@@ -1,8 +1,12 @@
 {
-  "name": "my-sheets-proxy",
-  "private": true,
+  "name": "google_sheet_proxy",
   "type": "module",
   "dependencies": {
-    "googleapis": "^132.0.0"
+    "express": "5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.17",
+    "@types/express": "5.0.0",
+    "typescript": "5.8.3"
   }
 }
