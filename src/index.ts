@@ -3,7 +3,7 @@ import express from 'express'
 const app = express()
 
 app.get('/', (_req, res) => {
-  res.send('Helloo Express!')
+  res.send('Hello Express!')
 })
 
 app.get('/api/users/:id', (_req, res) => {
