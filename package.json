@@ -2,7 +2,8 @@
   "name": "google_sheet_proxy",
   "type": "module",
   "dependencies": {
-    "express": "5.1.0"
+    "express": "5.1.0",
+    "googleapis": "^132.0.0"
   },
   "devDependencies": {
     "@types/node": "20.11.17",
