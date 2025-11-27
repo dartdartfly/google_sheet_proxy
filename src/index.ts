@@ -111,6 +111,17 @@ async function sheetHandler(req: Request, res: Response) {
 
 const app = express();
 
+// CORS middleware
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, x-proxy-secret');
+  if (req.method === 'OPTIONS') {
+    return res.sendStatus(204);
+  }
+  next();
+});
+
 // parsers (Vercel passes raw req/res; create app per invocation is fine for small handlers)
 app.use(express.json({ limit: '1mb' }));
 app.use(express.urlencoded({ extended: true }));
